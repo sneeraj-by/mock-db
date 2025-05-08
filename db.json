@@ -1,11 +1,28 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "hello"
+      "id": "1",
+      "title": "json-server updated",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment updated once again",
+      "postId": 1
     }
   ],
   "profile": {
-    "name": "typicode"
+    "name": "nrj"
+  },
+  "products": [
+    { "id": 1, "name": "Milk", "price": 70 },
+    { "id": 2, "name": "Bread", "price": 20 },
+    { "id": 3, "name": "Eggs", "price": 100 }
+  ],
+  "runs": {
+    "default": "json-server --watch db.json",
+    "port": "json-server --watch db.json --port 1234"
   }
 }
